@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 2px;
+  height: 300px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img
+{
+  width: 250px;
+  height: 230px;
+}
+p
+{
+  margin: 0;
+  font-family: Comic Sans MS;
+  color: green;
+  font-weight: 16px;
+}
+input
+{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<center>
+<p>BREAD & RICE</p>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <div id="A">
+      <img src="photo\food\i1.jpg">
+      <p>Per Price 12 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub()">
+      <input type="text" name="" placeholder="0" value="0" id="ii1">
+      <input type="button" name="plus" value="+" onclick="sum()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <div id="A">
+      <img src="photo\food\i2.jpg">
+    <p>Per Price 25 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub2()">
+      <input type="text" name="" placeholder="0" value="0" id="ii2">
+      <input type="button" name="plus" value="+" onclick="sum2()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <div id="A">
+      <img src="photo\food\i3.jpg">
+   <p>Per Price 15 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub3()">
+      <input type="text" name="" placeholder="0" value="0" id="ii3">
+      <input type="button" name="plus" value="+" onclick="sum3()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#aaa;">
+    <div id="A">
+      <img src="photo\food\i4.jpg">
+    <p>Per Price 20 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub4()">
+      <input type="text" name="" placeholder="0" value="0" id="ii4">
+      <input type="button" name="plus" value="+" onclick="sum4()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+     <div id="A">
+      <img src="photo\food\i5.jpg">
+   <p>Per Price 75 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub5()">
+      <input type="text" name="" placeholder="0" value="0" id="ii5">
+      <input type="button" name="plus" value="+" onclick="sum5()">
+    </div>
+  </div>
+</div>
+<p>PANEER</p>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+     <div id="A">
+      <img src="photo\food\i6.jpg">
+   <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub6()">
+      <input type="text" name="" placeholder="0" value="0" id="ii6">
+      <input type="button" name="plus" value="+" onclick="sum6()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <div id="A">
+      <img src="photo\food\i7.jpg">
+       <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub7()">
+      <input type="text" name="" placeholder="0" value="0" id="ii7">
+      <input type="button" name="plus" value="+" onclick="sum7()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+   <div id="A">
+      <img src="photo\food\i8.jpg">
+   <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub8()">
+      <input type="text" name="" placeholder="0" value="0" id="ii8">
+      <input type="button" name="plus" value="+" onclick="sum8()">
+    </div>
+  </div>   
+  <div class="column" style="background-color:#aaa;">
+   
+    <div id="A">
+      <img src="photo\food\i9.jpg">
+    <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub9()">
+      <input type="text" name="" placeholder="0" value="0" id="ii9">
+      <input type="button" name="plus" value="+" onclick="sum9()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+   <div id="A">
+      <img src="photo\food\i10.jpg">
+    <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub10()">
+      <input type="text" name="" placeholder="0" value="0" id="ii10">
+      <input type="button" name="plus" value="+" onclick="sum10()">
+    </div>
+  </div>   
+  </div>
+<p>CHICKEN</p>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+   
+    <div id="A">
+      <img src="photo\food\i11.jpg">
+   <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub11()">
+      <input type="text" name="" placeholder="0" value="0" id="ii11">
+      <input type="button" name="plus" value="+" onclick="sum11()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+   
+    <div id="A">
+      <img src="photo\food\i12.jpg">
+    <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub12()">
+      <input type="text" name="" placeholder="0" value="0" id="ii12">
+      <input type="button" name="plus" value="+" onclick="sum12()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+   
+    <div id="A">
+      <img src="photo\food\i13.jpg">
+    <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub13()">
+      <input type="text" name="" placeholder="0" value="0" id="ii13">
+      <input type="button" name="plus" value="+" onclick="sum13()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#aaa;">
+   
+    <div id="A">
+      <img src="photo\food\i14.jpg">
+   <p>Per Price 120 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub14()">
+      <input type="text" name="" placeholder="0" value="0" id="ii14">
+      <input type="button" name="plus" value="+" onclick="sum14()">
+    </div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+   <div id="A">
+      <img src="photo\food\i15.jpg">
+   <p>Per Price 180 RS. only</p>
+    </div>
+    <div id="B">
+      <input type="button" name="minus" value="-" onclick="sub15()">
+      <input type="text" name="" placeholder="0" value="0" id="ii15">
+      <input type="button" name="plus" value="+" onclick="sum15()">
+    </div>
+  </div>
+  </div>
+ <a href="Home.html"> <button value="Cancel" style="color: white; height: 50px; width:120px; background-color: red;">Cancel</button></a>
+  <button value="Pay" style="color: white; height: 50px; width:120px; background-color: green;" onclick="Bill()">Pay Bill</button>
+</center>
+<script type="text/javascript">
+   function Bill()
+   {
+     var Total_Bill=0;
+     var i=0;
+     var Bill=[];
+     var TBill=[];
+     // var a1 =" ",a2=" ",a3=" ",a4=" ",a5=" ",a6=" " ,a7=" ",a8=" ",a9=" ",a10=" ",a11=" ",a12=" ",a13=" ",a14=" ",a15=" ";
+     var Bill1=0,Bill2=0,Bill3=0,Bill5=0,Bill4=0,Bill10=0,Bill6=0,Bill7=0,Bill8=0,Bill9=0,Bill11=0,Bill12=0,Bill13=0,Bill15=0,Bill14=0;
+     if(document.getElementById('ii1').value>0)
+      { 
+       Bill1=(document.getElementById('ii1').value*12);
+       Bill[i]=("Roti     x "+ document.getElementById('ii1').value +" piece ");
+       TBill[i]=Bill1+" RS";
+       // Bill[i]="Roti x "+ document.getElementById('ii1').value +" piece = "+Bill1;
+       i++;
+     }
+    if(document.getElementById('ii2').value>0)
+     {
+       Bill2=(document.getElementById('ii2').value*25);
+       Bill[i]=("Tandoori Roti     x "+ document.getElementById('ii2').value +" piece ");
+       TBill[i]=Bill2+" RS";
+       // Bill[i]=("Tandoori Roti x "+ document.getElementById('ii2').value +" piece = "+Bill2);
+       i++;
+     }
+     if(document.getElementById('ii3').value>0)
+     {
+       Bill3=(document.getElementById('ii3').value*15);
+       Bill[i]=("Batura     x "+ document.getElementById('ii3').value +" piece ");
+       TBill[i]=Bill3+" RS";
+       // Bill[i]=("Batura x "+ document.getElementById('ii3').value +" piece = "+Bill3);
+       i++
+     }
+      if(document.getElementById('ii4').value>0)
+     {
+       Bill4=(document.getElementById('ii4').value*20);
+       Bill[i]=("Parata     x "+ document.getElementById('ii4').value +" piece ");
+       TBill[i]=Bill4+" RS";
+       // Bill[i]=("Parata x "+ document.getElementById('ii4').value +" piece = "+Bill4);
+       i++;
+     }
+     if(document.getElementById('ii5').value>0)
+     {
+       Bill5=(document.getElementById('ii5').value*75);
+       Bill[i]=("Jeera Rice    x "+ document.getElementById('ii5').value +" piece ");
+       TBill[i]=Bill5+" RS";
+       // Bill[i]=("Jeera Rice x "+ document.getElementById('ii5').value +" piece = "+Bill5);
+       i++;
+     }
+     if(document.getElementById('ii6').value>0)
+      { 
+       Bill6=(document.getElementById('ii6').value*120);
+       Bill[i]=("Paneer Butter Masala     x "+ document.getElementById('ii6').value +" piece ");
+       TBill[i]=Bill6+" RS";
+       // Bill[i]=("Paneer Butter Masala x "+ document.getElementById('ii6').value +" piece = "+Bill6);
+      i++;
+     }
+    if(document.getElementById('ii7').value>0)
+     {
+       Bill7=(document.getElementById('ii7').value*120);
+       Bill[i]=("Sahi Paneer     x "+ document.getElementById('ii7').value +" piece ");
+       TBill[i]=Bill7+" RS";
+       // Bill[i]=("Sahi Paneer x "+ document.getElementById('ii7').value +" piece = "+Bill7);
+      i++;
+     }
+     if(document.getElementById('ii8').value>0)
+     {
+       Bill8=(document.getElementById('ii8').value*120);
+       Bill[i]=("Paneer Chilli     x "+ document.getElementById('ii8').value +" piece ");
+       TBill[i]=Bill8+" RS";
+       // Bill[i]=("Paneer Chilli x "+ document.getElementById('ii8').value +" piece = "+Bill8);
+      i++;
+     }
+      if(document.getElementById('ii9').value>0)
+     {
+       Bill9=(document.getElementById('ii9').value*120);
+       Bill[i]=("Mushroom    x "+ document.getElementById('ii9').value +" piece ");
+       TBill[i]=Bill9+" RS";
+       // Bill[i]="Mushroom x "+ document.getElementById('ii9').value +" piece = "+Bill9+"\n";
+      i++;
+     }
+     if(document.getElementById('ii10').value>0)
+     {
+       Bill10=(document.getElementById('ii10').value*120);
+       Bill[i]=("Matar Paneer     x "+ document.getElementById('ii10').value +" piece ");
+       TBill[i]=Bill10+" RS";
+       // Bill[i]=("Matar Paneer x "+ document.getElementById('ii10').value +" piece = "+Bill10);
+       i++;
+     }
+       if(document.getElementById('ii11').value>0)
+      { 
+       Bill11=(document.getElementById('ii11').value*120);
+       Bill[i]=("Chicken Lollipop     x "+ document.getElementById('ii11').value +" piece ");
+       TBill[i]=Bill11+" RS";
+       // Bill[i]=("Chicken Lollipop x "+ document.getElementById('ii11').value +" piece = "+Bill11);
+       i++;
+       }
+    if(document.getElementById('ii12').value>0)
+     {
+       Bill12=(document.getElementById('ii12').value*120);
+       Bill[i]=("Chicken Masala    x "+ document.getElementById('ii12').value +" piece ");
+       TBill[i]=Bill12+" RS";
+       // Bill[i]=("Chicken Masala x "+ document.getElementById('ii12').value +" piece = "+Bill12);
+       i++;
+     }
+     if(document.getElementById('ii13').value>0)
+     {
+       Bill13=(document.getElementById('ii13').value*120);
+       Bill[i]=("Chicken Butter Masala     x "+ document.getElementById('ii13').value +" piece ");
+       TBill[i]=Bill13+" RS";
+       // Bill[i]=("Chicken Butter Masala x "+ document.getElementById('ii13').value +" piece = "+Bill13);
+       i++;
+     }
+      if(document.getElementById('ii14').value>0)
+     {
+       Bill14=(document.getElementById('ii14').value*120);
+       Bill[i]=("Chicken Chilli   x "+ document.getElementById('ii14').value +" piece ");
+       TBill[i]=Bill14+" RS";
+       i++;
+     }
+     if(document.getElementById('ii15').value>0)
+     {
+       Bill15=(document.getElementById('ii15').value*180);
+       Bill[i]=("Chicken Briyani     x "+ document.getElementById('ii15').value +" piece ");
+       TBill[i]=Bill15+" RS";
+       // Bill[i]="Chicken Briyani x "+ document.getElementById('ii15').value +" piece = "+Bill15+"\n";
+       i++;
+     }
+      Total_Bill=Bill1+Bill2+Bill3+Bill4+Bill5+Bill6+Bill7+Bill8+Bill9+Bill10+Bill11+Bill12+Bill13+Bill14+Bill15;
+     Bill[i]="Total_Bill  =";
+     TBill[i]=Total_Bill+" RS"
+     document.write("<center>" +"<h1> Sweet Fast Food Corner Bill</h1><h3> Urdu Bazar, Bhagalpur-812002"+"<table border=3 width=420px bgColor=yellow>"); 
+     document.write("<tr height=80px>");
+     document.write("<th>"+" Name "+"</th>");
+     document.write("<th>"+" Price "+"</th>");
+     document.write("</tr>");
+     for (var i = 0; i < Bill.length; i++)
+    {
+      document.write("<tr height=80px>");
+      document.write("<td align=center>"+Bill[i]+"</td>");
+      document.write("<td align=right>"+TBill[i]+"</td>");
+      document.write("</tr>");
+     }
+     document.write("</table></center>"); 
+     document.write("<center><button onclick=back()>Go Home Page</button></center>");
+    // alert(a1+"\n"+a2+"\n"+a3+"\n"+a4+"\n"+a5+"\n"+"Total = "+Total_Bill);
+  }
+  function sub(argument) 
+  {
+    x=document.getElementById('ii1').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii1').value=x;
+    }
+  }
+   function sum(argument) 
+  {
+
+    y=document.getElementById('ii1').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii1').value=y;
+  }
+  }
+   function sub2(argument) 
+  {
+    x=document.getElementById('ii2').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii2').value=x;
+    }
+  }
+   function sum2(argument) 
+  {
+
+    y=document.getElementById('ii2').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii2').value=y;
+  }
+  }
+   function sub3(argument) 
+  {
+    x=document.getElementById('ii3').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii3').value=x;
+    }
+  }
+   function sum3(argument) 
+  {
+
+    y=document.getElementById('ii3').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii3').value=y;
+  }
+  }
+   function sub4(argument) 
+  {
+    x=document.getElementById('ii4').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii4').value=x;
+    }
+  }
+   function sum4(argument) 
+  {
+
+    y=document.getElementById('ii4').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii4').value=y;
+  }
+  }
+   function sub5(argument) 
+  {
+    x=document.getElementById('ii5').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii5').value=x;
+    }
+  }
+   function sum5(argument) 
+  {
+
+    y=document.getElementById('ii5').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii5').value=y;
+  }
+  }
+  function sub6(argument) 
+  {
+    x=document.getElementById('ii6').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii6').value=x;
+    }
+  }
+   function sum6(argument) 
+  {
+
+    y=document.getElementById('ii6').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii6').value=y;
+  }
+  }
+  function sub7(argument) 
+  {
+    x=document.getElementById('ii7').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii7').value=x;
+    }
+  }
+   function sum7(argument) 
+  {
+
+    y=document.getElementById('ii7').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii7').value=y;
+  }
+  }
+  function sub8(argument) 
+  {
+    x=document.getElementById('ii8').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii8').value=x;
+    }
+  }
+   function sum8(argument) 
+  {
+
+    y=document.getElementById('ii8').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii8').value=y;
+  }
+  }
+  function sub9(argument) 
+  {
+    x=document.getElementById('ii9').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii9').value=x;
+    }
+  }
+   function sum9(argument) 
+  {
+
+    y=document.getElementById('ii9').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii9').value=y;
+  }
+  }
+  function sub10(argument) 
+  {
+    x=document.getElementById('ii10').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii10').value=x;
+    }
+  }
+   function sum10(argument) 
+  {
+
+    y=document.getElementById('ii10').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii10').value=y;
+  }
+  }
+   function sub11(argument) 
+  {
+    x=document.getElementById('ii11').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii11').value=x;
+    }
+  }
+   function sum11(argument) 
+  {
+
+    y=document.getElementById('ii11').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii11').value=y;
+  }
+  }
+   function sub12(argument) 
+  {
+    x=document.getElementById('ii12').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii12').value=x;
+    }
+  }
+   function sum12(argument) 
+  {
+
+    y=document.getElementById('ii12').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii12').value=y;
+  }
+  }
+   function sub13(argument) 
+  {
+    x=document.getElementById('ii13').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii13').value=x;
+    }
+  }
+   function sum13(argument) 
+  {
+
+    y=document.getElementById('ii13').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii13').value=y;
+  }
+  }
+   function sub14(argument) 
+  {
+    x=document.getElementById('ii14').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii14').value=x;
+    }
+  }
+   function sum14(argument) 
+  {
+
+    y=document.getElementById('ii14').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii14').value=y;
+  }
+  }
+   function sub15(argument) 
+  {
+    x=document.getElementById('ii15').value;
+    if (x>0) 
+    {
+    x--;
+    document.getElementById('ii15').value=x;
+    }
+  }
+   function sum15(argument) 
+  {
+
+    y=document.getElementById('ii15').value;
+    if (y>=0) 
+    {
+       y++;
+      document.getElementById('ii15').value=y;
+  }
+  } 
+  function back()
+   {
+   		window.close();
+        Window=window.open("online.html","_blank","width=1600px, height=800px");
+    }
+</script>
+</body>
+</html>

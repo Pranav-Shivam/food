@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#slide-show
+		{
+			width: 100%;
+			height: 530px;
+			position: absolute;
+			/*top: 50%;*/
+			/*transform: translate(-50%,-50%);*/
+			background-image: url(photo/animation/x1.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 2px 10px 10px white;
+			animation: slider 120s infinite linear;
+			/*animation-delay: .5s;*/
+		}
+		@keyframes slider{
+			0%{
+				background-image: url(photo/animation/1.jpg);
+			}
+			8%{
+				background-image: url(photo/animation/2.jpg);
+			}
+			16%{
+				background-image: url(photo/animation/3.jpg);
+			}
+			24%{
+				background-image: url(photo/animation/4.png);
+			}
+			32%{
+				background-image: url(photo/animation/5.jpg);
+			}
+			40%{
+				background-image: url(photo/animation/6.jpg);
+			}
+			48%{
+				background-image: url(photo/animation/13.jpg);
+			}
+			56%{
+				background-image: url(photo/animation/7.jpg);
+			}
+			64%{
+				background-image: url(photo/animation/8.jpg);
+			}
+			72%{
+				background-image: url(photo/animation/9.jpg);
+			}
+			80%{
+				background-image: url(photo/animation/10.jpg);
+			}
+			88%{
+				background-image: url(photo/animation/11.jpg);
+			}
+			96%{
+				background-image: url(photo/animation/12.jpg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+<div style="background-color: ">
+	<img src="photo/animation/article.jpg" width="100%" height="130px">
+	<div id="slide-show">
+		
+	</div>
+</div>
+</body>
+</html>

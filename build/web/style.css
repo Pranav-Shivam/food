@@ -1,0 +1,133 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+#header
+{
+	height: 80px;
+	width: 100%;
+	background-color: #F0F8FF;
+}
+#logo
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 55px;
+	width: 12%
+}
+#name
+{
+	margin-top: 10px;
+	height: 55px;
+	width: 20%;
+}
+#Eat
+{
+	position: absolute;
+	margin-top: 1px;
+	width: 130px;
+	height: 78px;
+	border:1px none white;
+	right: 2%;
+}
+.nav
+{
+	height: 40px;
+	width: 100%;
+	margin: 2px;
+	padding: 2px;
+	background-color: #FFE4B5;
+	text-align: center;
+}
+#content
+{
+	height: 560px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+#Footer
+{
+		width: 100%;
+		height: 60px;
+		background-color: #F08080;
+		text-align: center;	
+}
+
+.nav li
+{
+	display: inline-flex;
+}
+.nav ul li 
+{
+	width: 18%;
+	height: 20px;
+	border-radius: 20px;
+	color: red;
+	text-align: center;
+}
+ul li a
+{
+	float: left;
+	color: #6495ED;
+	/*transition: all 0.5s ease;*/
+	text-decoration-line: none;
+	font-size: 25px;
+}
+ul li a:hover
+{
+	background-color: #7FFF00;
+	display:block;
+	position: absolute;
+	padding: 8px;
+	margin: -5px;
+	color: white;
+}
+fa{
+	margin: 5px;
+}
+
+		.sub-menu-1
+		{
+			display: none;
+			color: red;
+		}
+		.nav ul li:hover .sub-menu-1
+		{
+			display:inline-block;
+			position: absolute;
+			background-color: #FFE4B5;
+			margin-top: 35px;
+			margin-left: -10px;
+
+		}
+		.nav ul li:hover .sub-menu-1 ul
+		{
+			display:inline-grid;
+			margin: 0px 8px;
+		}
+		.fa 
+		{
+			margin: 3px;
+		}
+		.nav ul li:hover .sub-menu-1 ul li
+		{
+			width: 145px;
+			padding: 8px;
+			border-bottom: 1px dotted #fff;
+			border-radius: 3px;
+			text-align: left;
+			text-decoration-line: none;
+		}
+		.nav ul li:hover .sub-menu-1 ul li a{
+			text-decoration-line: none;
+		}
+		.nav ul li:hover .sub-menu-1 ul li:last-child
+		{
+			border-bottom: none;
+		}
+		.nav ul li:hover .sub-menu-1 ul li a:hover
+		{
+			color:  white;
+		}
